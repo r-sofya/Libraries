@@ -38,3 +38,17 @@ loadExternalFile(particlesHTMLURL, function (htmlContent) {
 loadExternalFile(styleCSSURL, function (cssContent) {
     injectCSS(cssContent);
 });
+
+// Overrides display="none" css for .tc-particles
+
+function injectCSS(cssContent) {
+    const overrideStyleTag = document.createElement('style');
+    const particlesSelector = '.tc-particles';
+    const overrideRule = `${particlesSelector} { display: block !important; }`;
+
+    // Combine the original CSS content with the override rule
+    const combinedCSS = cssContent + overrideRule;
+
+    overrideStyleTag.innerHTML = combinedCSS;
+    document.head.appendChild(overrideStyleTag);
+}
