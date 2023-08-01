@@ -28,8 +28,8 @@ function injectCSS(cssContent) {
     document.head.appendChild(styleTag);
 }
 
-const particlesHTMLURL = 'particles.html';
-const styleCSSURL = 'style.css';
+const particlesHTMLURL = 'https://code.trulycustom.ca/css/soft-particles/particles.html';
+const styleCSSURL = 'https://code.trulycustom.ca/css/soft-particles/style.css';
 
 loadExternalFile(particlesHTMLURL, function (htmlContent) {
     injectHTML('tc-particles', htmlContent);
