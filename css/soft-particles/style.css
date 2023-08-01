@@ -1,6 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
+#tc-particles {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .container {

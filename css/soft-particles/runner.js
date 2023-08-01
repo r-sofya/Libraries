@@ -32,7 +32,7 @@ const particlesHTMLURL = 'particles.html';
 const styleCSSURL = 'style.css';
 
 loadExternalFile(particlesHTMLURL, function (htmlContent) {
-    injectHTML('particles', htmlContent);
+    injectHTML('tc-particles', htmlContent);
 });
 
 loadExternalFile(styleCSSURL, function (cssContent) {
