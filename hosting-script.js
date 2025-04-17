@@ -1,4 +1,4 @@
-// template-hosting-worker.js
+// template-hosting-worker.js 
 
 export async function createTemplateWorker(request, env, ctx, config) {
   const CACHE_NAME = "version";
